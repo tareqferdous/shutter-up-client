@@ -1,0 +1,21 @@
+.sidebar{
+    background-color:darkslateblue;
+    position: fixed;
+    margin-left: 0;
+    z-index: 2;
+}
+.sidebar li {
+    margin-bottom: 2em;
+    list-style: none;
+}
+
+.sidebar li span{
+    list-style: none;
+}
+.sidebar li:hover span{
+    display: inline-block;
+    transform: translate(5px);
+}
+.sidebar svg{
+    margin-right: 5px;
+}

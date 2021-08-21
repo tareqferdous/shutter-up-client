@@ -1,0 +1,101 @@
+.banner-area {
+    height: 90vh;
+    position: relative;
+    z-index: 5;
+  }
+  .banner-area:before {
+    position: absolute;
+    content: "";
+    width: 100%;
+    height: 100%;
+    left: 0;
+    top: 0;
+    background-color: #333;
+    z-index: -1;
+    opacity: 0.75;
+  }
+  .banner-area img {
+    position: absolute;
+    z-index: -2;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+  }
+  .banner-content {
+    color: #fff;
+    position: absolute;
+    left: 50%;
+    top: 40%;
+    text-align: center;
+    width: 100%;
+    transform: translate(-50%, -50%);
+  }
+  .banner-content h1 {
+    text-transform: uppercase;
+    font-weight: 600;
+    font-size: 50px;
+    letter-spacing: 1px;
+  }
+  .banner-content p {
+    text-transform: capitalize;
+    font-size: 18px;
+    color: #ddd;
+    line-height: 30px;
+    width: 46%;
+    margin: 0 auto;
+  }
+  .banner-content a {
+      position: absolute;
+    padding: 8px 16px;
+    border: 2px solid limegreen;
+    background-color: limegreen;
+    text-decoration: none;
+    top: 120%;
+    left: 46%;
+    color: #fff;
+    font-size: 22px;
+    border-radius: 3px;
+    text-transform: capitalize;
+    transition: 0.3s ease-in-out;
+  }
+  .banner-content a:hover{
+      background-color: transparent;
+  }
+
+
+  @media screen and (max-width: 768px){
+    .banner-content {
+        color: #fff;
+        position: absolute;
+        left: 50%;
+        top: 50%;
+        text-align: center;
+        width: 100%;
+        transform: translate(-50%, -50%);
+      }
+      .banner-content p {
+        text-transform: capitalize;
+        font-size: 16px;
+        color: #ddd;
+        line-height: 30px;
+        width: 80%;
+        margin: 0 auto;
+      }
+      .banner-content h1 {
+        text-transform: uppercase;
+        font-weight: 600;
+        font-size: 40px;
+        letter-spacing: 1px;
+      }
+      .banner-content a {
+        position: absolute;
+      padding: 10px 18px;
+      border: 1px solid limegreen;
+      background-color: limegreen;
+      text-decoration: none;
+      top: 110%;
+      left: 40%;
+    }
+  }
